@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Oswald', sans-serif;
+}
+
+.our-team{ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.our-team h1{
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+.card{
+    flex: 0 0 250px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 3px 2px 6px 0px grey;
+    text-align: center;
+}
+.card img{
+    max-width: 100%;
+}
+.card .text{
+    padding: 20px;
+}
+.text > button{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 80%;
+    line-height: 36px;
+    margin-top:10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    }
+
+.card h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.card p{
+    font-weight: 300;
+    color:gray;
+    font-size: 14px;
+    
+}
+button:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: -23px;
+    border-left: 20px solid black;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    transition: .2s;
+}
+button:hover::before{
+    left: 0;
+}
